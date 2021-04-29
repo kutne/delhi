@@ -182,8 +182,11 @@ var layer_delhi_1922_polygons_11 = new L.geoJson(json_delhi_1922_polygons_11, {
     dataVar: 'json_delhi_1922_polygons_11',
     layerName: 'layer_delhi_1922_polygons_11',
     pane: 'pane_delhi_1922_polygons_11',
-    onEachFeature: pop_delhi_1922_polygons_11, 
     style: style_delhi_1922_polygons_11_0,
+    // onEachFeature: pop_delhi_1922_polygons_11, 
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.type);
+    }
 });
 bounds_group.addLayer(layer_delhi_1922_polygons_11);
 map.addLayer(layer_delhi_1922_polygons_11);
