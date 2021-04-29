@@ -85,40 +85,40 @@ function setBounds() {
 
 
 
-// adding maps starts here:
-// ADD 1922 NORTHEAST
-map.createPane('pane_delhi_1922_NE_0');
-map.getPane('pane_delhi_1922_NE_0').style.zIndex = 300;
-var img_delhi_1922_NE_0 = 'data/delhi_1922_NE_0.png';
-var img_bounds_delhi_1922_NE_0 = [[28.61913574390048,77.20122676318451],[28.764511233031556,77.32588059191323]];
-var layer_delhi_1922_NE_0 = new L.imageOverlay(img_delhi_1922_NE_0,
-                                      img_bounds_delhi_1922_NE_0,
-                                      {pane: 'pane_delhi_1922_NE_0'});
-bounds_group.addLayer(layer_delhi_1922_NE_0);
-// map.addLayer(layer_delhi_1922_NE_0);
+// // adding maps starts here:
+// // ADD 1922 NORTHEAST
+// map.createPane('pane_delhi_1922_NE_0');
+// map.getPane('pane_delhi_1922_NE_0').style.zIndex = 300;
+// var img_delhi_1922_NE_0 = 'data/delhi_1922_NE_0.png';
+// var img_bounds_delhi_1922_NE_0 = [[28.61913574390048,77.20122676318451],[28.764511233031556,77.32588059191323]];
+// var layer_delhi_1922_NE_0 = new L.imageOverlay(img_delhi_1922_NE_0,
+//                                       img_bounds_delhi_1922_NE_0,
+//                                       {pane: 'pane_delhi_1922_NE_0'});
+// bounds_group.addLayer(layer_delhi_1922_NE_0);
+// // map.addLayer(layer_delhi_1922_NE_0);
 
-// ADD 1912  MAP
-map.createPane('pane_delhi_1912_MAP_4');
-map.getPane('pane_delhi_1912_MAP_4').style.zIndex = 304;
-var img_delhi_1912_MAP_4 = 'data/delhi_1912_MAP_4.png';
-var img_bounds_delhi_1912_MAP_4 = [[28.4887951815074,77.08418642528135],[28.75455756631503,77.29357530049151]];
-var layer_delhi_1912_MAP_4 = new L.imageOverlay(img_delhi_1912_MAP_4,
-                                      img_bounds_delhi_1912_MAP_4,
-                                      {pane: 'pane_delhi_1912_MAP_4'});
-bounds_group.addLayer(layer_delhi_1912_MAP_4);
-// map.addLayer(layer_delhi_1912_MAP_4);
+// // ADD 1912  MAP
+// map.createPane('pane_delhi_1912_MAP_4');
+// map.getPane('pane_delhi_1912_MAP_4').style.zIndex = 304;
+// var img_delhi_1912_MAP_4 = 'data/delhi_1912_MAP_4.png';
+// var img_bounds_delhi_1912_MAP_4 = [[28.4887951815074,77.08418642528135],[28.75455756631503,77.29357530049151]];
+// var layer_delhi_1912_MAP_4 = new L.imageOverlay(img_delhi_1912_MAP_4,
+//                                       img_bounds_delhi_1912_MAP_4,
+//                                       {pane: 'pane_delhi_1912_MAP_4'});
+// bounds_group.addLayer(layer_delhi_1912_MAP_4);
+// // map.addLayer(layer_delhi_1912_MAP_4);
 
 
-// ADD 1939 MAP
-map.createPane('pane_delhi_19391942_modified_10');
-map.getPane('pane_delhi_19391942_modified_10').style.zIndex = 410;
-var img_delhi_19391942_modified_10 = 'data/delhi_19391942_modified_10.png';
-var img_bounds_delhi_19391942_modified_10 = [[28.526870525966174,77.0794020434214],[28.76143207028693,77.28305300632314]];
-var layer_delhi_19391942_modified_10 = new L.imageOverlay(img_delhi_19391942_modified_10,
-                                      img_bounds_delhi_19391942_modified_10,
-                                      {pane: 'pane_delhi_19391942_modified_10'});
-bounds_group.addLayer(layer_delhi_19391942_modified_10);
-// map.addLayer(layer_delhi_19391942_modified_10);
+// // ADD 1939 MAP
+// map.createPane('pane_delhi_19391942_modified_10');
+// map.getPane('pane_delhi_19391942_modified_10').style.zIndex = 410;
+// var img_delhi_19391942_modified_10 = 'data/delhi_19391942_modified_10.png';
+// var img_bounds_delhi_19391942_modified_10 = [[28.526870525966174,77.0794020434214],[28.76143207028693,77.28305300632314]];
+// var layer_delhi_19391942_modified_10 = new L.imageOverlay(img_delhi_19391942_modified_10,
+//                                       img_bounds_delhi_19391942_modified_10,
+//                                       {pane: 'pane_delhi_19391942_modified_10'});
+// bounds_group.addLayer(layer_delhi_19391942_modified_10);
+// // map.addLayer(layer_delhi_19391942_modified_10);
 
 
 map.createPane('pane_OpenStreetMapmonochrome');
@@ -442,11 +442,11 @@ L.control.layers(baseMaps,{
   
   '<img src="legend/delhi_1939_points_14.png" /> 1939 points': layer_delhi_1939_points_14,
   
-  "1912 map": layer_delhi_1912_MAP_4,
+//   "1912 map": layer_delhi_1912_MAP_4,
   
-  "1922 map": layer_delhi_1922_NE_0,
+//   "1922 map": layer_delhi_1922_NE_0,
   
-  "1939 map": layer_delhi_19391942_modified_10,
+//   "1939 map": layer_delhi_19391942_modified_10,
   
   "present day baselayer": layer_OpenStreetMapmonochrome_16,
   
