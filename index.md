@@ -10,16 +10,79 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
         <style>
-        #map {
-            width: 906px;
-            height: 807px;
+        
+        html {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+          -webkit-box-sizing: inherit;
+          -moz-box-sizing: inherit;
+          box-sizing: inherit;
+        }
+
+        html, body {
+          height: 100%;  
+          padding: 0;
+          margin: 0;
+          display: block;
+        }
+        .container {
+         height: 100%;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+        }
+
+        .header {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 0 auto;
+                  flex: 0 0 auto;
+          padding: 0 1rem;
+        }
+
+        .title {
+          /* Fallback for calc / vmin */
+          font-size: 2rem;
+          font-size: calc( 2vmin + 1rem);
+        }
+
+
+        .map-container {
+          height: 100%;
+          /* Fallback for vmin */
+          padding: 0px 1rem 1rem 1rem;
+          padding: 0px 1vmin 1vmin 1vmin;
+        }
+
+        .map-frame {
+          height: 100%;
+          width: 100%;
+        /*   We use outline over border as has issues in some cases */
+          outline: 1px solid black;
+        }
+
+        #map { 
+          height: 100%;
+          width: 100%;
         }
         </style>
         <title>Persisting in Place: Representation and Resilience of Delhi Graveyards</title>
     </head>
     <body>
-        <div id="map">
+      <div class="map-container">
+        <div class="map-frame">
+          <div id="map">
+            
         </div>
+      </div>
+    </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/leaflet-svg-shape-markers.min.js"></script>
